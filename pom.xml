@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.msr.msrshop</groupId>
+    <artifactId>msrshop-bp</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>msrshop-bp</name>
+    <description>父工程-聚合服务</description>
+    <!--  打包方式 packaging -->
+    <packaging>pom</packaging>
+
+    <!--  聚合其它的子工程模块  -->
+    <modules>
+        <module>msrshop-product</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>msrshop-coupon</module>
+        <module>msrshop-member</module>
+        <module>msrshop-order</module>
+        <module>msrshop-ware</module>
+        <module>msrshop-common</module>
+<!--        <module>msrshop-gateway</module>-->
+    </modules>
+</project>

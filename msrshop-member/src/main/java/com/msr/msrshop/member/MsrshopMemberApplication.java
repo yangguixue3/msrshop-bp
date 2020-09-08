@@ -1,0 +1,13 @@
+package com.msr.msrshop.member;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MsrshopMemberApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MsrshopMemberApplication.class, args);
+    }
+
+}
