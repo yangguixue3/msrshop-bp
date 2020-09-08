@@ -4,17 +4,17 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="${column.comments}" prop="subjectId">
-      <el-input v-model="dataForm.subjectId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="subject_id" prop="subjectId">
+      <el-input v-model="dataForm.subjectId" placeholder="subject_id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="subjectName">
-      <el-input v-model="dataForm.subjectName" placeholder="${column.comments}"></el-input>
+    <el-form-item label="subject_name" prop="subjectName">
+      <el-input v-model="dataForm.subjectName" placeholder="subject_name"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="subjectImg">
-      <el-input v-model="dataForm.subjectImg" placeholder="${column.comments}"></el-input>
+    <el-form-item label="subject_img" prop="subjectImg">
+      <el-input v-model="dataForm.subjectImg" placeholder="subject_img"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="subjectUrll">
-      <el-input v-model="dataForm.subjectUrll" placeholder="${column.comments}"></el-input>
+    <el-form-item label="活动url" prop="subjectUrll">
+      <el-input v-model="dataForm.subjectUrll" placeholder="活动url"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -38,16 +38,16 @@
         },
         dataRule: {
           subjectId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'subject_id不能为空', trigger: 'blur' }
           ],
           subjectName: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'subject_name不能为空', trigger: 'blur' }
           ],
           subjectImg: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'subject_img不能为空', trigger: 'blur' }
           ],
           subjectUrll: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '活动url不能为空', trigger: 'blur' }
           ]
         }
       }

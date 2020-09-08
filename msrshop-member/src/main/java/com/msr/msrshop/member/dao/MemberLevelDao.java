@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 会员等级
  * 
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @Mapper
 public interface MemberLevelDao extends BaseMapper<MemberLevelEntity> {

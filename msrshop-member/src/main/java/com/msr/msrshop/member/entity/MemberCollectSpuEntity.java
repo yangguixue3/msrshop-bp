@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 会员收藏的商品
  * 
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @Data
 @TableName("ums_member_collect_spu")
@@ -20,28 +20,28 @@ public class MemberCollectSpuEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * $column.comments
+	 * id
 	 */
 	@TableId
 	private Long id;
 	/**
-	 * $column.comments
+	 * 会员id
 	 */
 	private Long memberId;
 	/**
-	 * $column.comments
+	 * spu_id
 	 */
 	private Long spuId;
 	/**
-	 * $column.comments
+	 * spu_name
 	 */
 	private String spuName;
 	/**
-	 * $column.comments
+	 * spu_img
 	 */
 	private String spuImg;
 	/**
-	 * $column.comments
+	 * create_time
 	 */
 	private Date createTime;
 

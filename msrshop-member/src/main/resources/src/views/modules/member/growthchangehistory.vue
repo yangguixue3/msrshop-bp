@@ -26,37 +26,37 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="memberId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="member_id">
       </el-table-column>
       <el-table-column
         prop="createTime"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="create_time">
       </el-table-column>
       <el-table-column
         prop="changeCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="改变的值（正负计数）">
       </el-table-column>
       <el-table-column
         prop="note"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="备注">
       </el-table-column>
       <el-table-column
         prop="sourceType"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="积分来源[0-购物，1-管理员修改]">
       </el-table-column>
       <el-table-column
         fixed="right"

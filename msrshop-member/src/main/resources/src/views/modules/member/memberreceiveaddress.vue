@@ -26,67 +26,67 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="memberId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="member_id">
       </el-table-column>
       <el-table-column
         prop="name"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="收货人姓名">
       </el-table-column>
       <el-table-column
         prop="phone"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="电话">
       </el-table-column>
       <el-table-column
         prop="postCode"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="邮政编码">
       </el-table-column>
       <el-table-column
         prop="province"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="省份/直辖市">
       </el-table-column>
       <el-table-column
         prop="city"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="城市">
       </el-table-column>
       <el-table-column
         prop="region"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="区">
       </el-table-column>
       <el-table-column
         prop="detailAddress"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="详细地址(街道)">
       </el-table-column>
       <el-table-column
         prop="areacode"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="省市区代码">
       </el-table-column>
       <el-table-column
         prop="defaultStatus"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="是否默认">
       </el-table-column>
       <el-table-column
         fixed="right"

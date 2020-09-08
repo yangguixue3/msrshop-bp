@@ -26,37 +26,37 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="memberId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="会员id">
       </el-table-column>
       <el-table-column
         prop="spuId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="spu_id">
       </el-table-column>
       <el-table-column
         prop="spuName"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="spu_name">
       </el-table-column>
       <el-table-column
         prop="spuImg"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="spu_img">
       </el-table-column>
       <el-table-column
         prop="createTime"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="create_time">
       </el-table-column>
       <el-table-column
         fixed="right"

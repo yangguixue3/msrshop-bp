@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 成长值变化历史记录
  * 
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @Data
 @TableName("ums_growth_change_history")
@@ -20,28 +20,28 @@ public class GrowthChangeHistoryEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * $column.comments
+	 * id
 	 */
 	@TableId
 	private Long id;
 	/**
-	 * $column.comments
+	 * member_id
 	 */
 	private Long memberId;
 	/**
-	 * $column.comments
+	 * create_time
 	 */
 	private Date createTime;
 	/**
-	 * $column.comments
+	 * 改变的值（正负计数）
 	 */
 	private Integer changeCount;
 	/**
-	 * $column.comments
+	 * 备注
 	 */
 	private String note;
 	/**
-	 * $column.comments
+	 * 积分来源[0-购物，1-管理员修改]
 	 */
 	private Integer sourceType;
 

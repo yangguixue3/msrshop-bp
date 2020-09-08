@@ -26,109 +26,109 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="levelId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="会员等级id">
       </el-table-column>
       <el-table-column
         prop="username"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="用户名">
       </el-table-column>
       <el-table-column
         prop="password"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="密码">
       </el-table-column>
       <el-table-column
         prop="nickname"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="昵称">
       </el-table-column>
       <el-table-column
         prop="mobile"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="手机号码">
       </el-table-column>
       <el-table-column
         prop="email"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="邮箱">
       </el-table-column>
       <el-table-column
         prop="header"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="头像">
       </el-table-column>
       <el-table-column
         prop="gender"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="性别">
       </el-table-column>
       <el-table-column
         prop="birth"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="生日">
       </el-table-column>
       <el-table-column
         prop="city"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="所在城市">
       </el-table-column>
       <el-table-column
         prop="job"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="职业">
       </el-table-column>
       <el-table-column
         prop="sign"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="个性签名">
       </el-table-column>
       <el-table-column
         prop="sourceType"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="用户来源">
       </el-table-column>
       <el-table-column
         prop="integration"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="积分">
       </el-table-column>
       <el-table-column
         prop="growth"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="成长值">
       </el-table-column>
       <el-table-column
         prop="status"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="启用状态">
       </el-table-column>
       <el-table-column
         prop="createTime"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="注册时间">
       </el-table-column>
       <el-table-column
         fixed="right"

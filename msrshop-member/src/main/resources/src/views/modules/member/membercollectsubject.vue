@@ -26,31 +26,31 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="subjectId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="subject_id">
       </el-table-column>
       <el-table-column
         prop="subjectName"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="subject_name">
       </el-table-column>
       <el-table-column
         prop="subjectImg"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="subject_img">
       </el-table-column>
       <el-table-column
         prop="subjectUrll"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="活动url">
       </el-table-column>
       <el-table-column
         fixed="right"

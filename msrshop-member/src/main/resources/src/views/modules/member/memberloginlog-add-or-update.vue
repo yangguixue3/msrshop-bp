@@ -4,20 +4,20 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="${column.comments}" prop="memberId">
-      <el-input v-model="dataForm.memberId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="member_id" prop="memberId">
+      <el-input v-model="dataForm.memberId" placeholder="member_id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="createTime">
-      <el-input v-model="dataForm.createTime" placeholder="${column.comments}"></el-input>
+    <el-form-item label="创建时间" prop="createTime">
+      <el-input v-model="dataForm.createTime" placeholder="创建时间"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="ip">
-      <el-input v-model="dataForm.ip" placeholder="${column.comments}"></el-input>
+    <el-form-item label="ip" prop="ip">
+      <el-input v-model="dataForm.ip" placeholder="ip"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="city">
-      <el-input v-model="dataForm.city" placeholder="${column.comments}"></el-input>
+    <el-form-item label="city" prop="city">
+      <el-input v-model="dataForm.city" placeholder="city"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="loginType">
-      <el-input v-model="dataForm.loginType" placeholder="${column.comments}"></el-input>
+    <el-form-item label="登录类型[1-web，2-app]" prop="loginType">
+      <el-input v-model="dataForm.loginType" placeholder="登录类型[1-web，2-app]"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -42,19 +42,19 @@
         },
         dataRule: {
           memberId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'member_id不能为空', trigger: 'blur' }
           ],
           createTime: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '创建时间不能为空', trigger: 'blur' }
           ],
           ip: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'ip不能为空', trigger: 'blur' }
           ],
           city: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'city不能为空', trigger: 'blur' }
           ],
           loginType: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '登录类型[1-web，2-app]不能为空', trigger: 'blur' }
           ]
         }
       }

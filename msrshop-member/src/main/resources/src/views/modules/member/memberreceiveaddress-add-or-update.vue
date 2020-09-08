@@ -4,35 +4,35 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="${column.comments}" prop="memberId">
-      <el-input v-model="dataForm.memberId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="member_id" prop="memberId">
+      <el-input v-model="dataForm.memberId" placeholder="member_id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="name">
-      <el-input v-model="dataForm.name" placeholder="${column.comments}"></el-input>
+    <el-form-item label="收货人姓名" prop="name">
+      <el-input v-model="dataForm.name" placeholder="收货人姓名"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="phone">
-      <el-input v-model="dataForm.phone" placeholder="${column.comments}"></el-input>
+    <el-form-item label="电话" prop="phone">
+      <el-input v-model="dataForm.phone" placeholder="电话"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="postCode">
-      <el-input v-model="dataForm.postCode" placeholder="${column.comments}"></el-input>
+    <el-form-item label="邮政编码" prop="postCode">
+      <el-input v-model="dataForm.postCode" placeholder="邮政编码"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="province">
-      <el-input v-model="dataForm.province" placeholder="${column.comments}"></el-input>
+    <el-form-item label="省份/直辖市" prop="province">
+      <el-input v-model="dataForm.province" placeholder="省份/直辖市"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="city">
-      <el-input v-model="dataForm.city" placeholder="${column.comments}"></el-input>
+    <el-form-item label="城市" prop="city">
+      <el-input v-model="dataForm.city" placeholder="城市"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="region">
-      <el-input v-model="dataForm.region" placeholder="${column.comments}"></el-input>
+    <el-form-item label="区" prop="region">
+      <el-input v-model="dataForm.region" placeholder="区"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="detailAddress">
-      <el-input v-model="dataForm.detailAddress" placeholder="${column.comments}"></el-input>
+    <el-form-item label="详细地址(街道)" prop="detailAddress">
+      <el-input v-model="dataForm.detailAddress" placeholder="详细地址(街道)"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="areacode">
-      <el-input v-model="dataForm.areacode" placeholder="${column.comments}"></el-input>
+    <el-form-item label="省市区代码" prop="areacode">
+      <el-input v-model="dataForm.areacode" placeholder="省市区代码"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="defaultStatus">
-      <el-input v-model="dataForm.defaultStatus" placeholder="${column.comments}"></el-input>
+    <el-form-item label="是否默认" prop="defaultStatus">
+      <el-input v-model="dataForm.defaultStatus" placeholder="是否默认"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -62,34 +62,34 @@
         },
         dataRule: {
           memberId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'member_id不能为空', trigger: 'blur' }
           ],
           name: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '收货人姓名不能为空', trigger: 'blur' }
           ],
           phone: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '电话不能为空', trigger: 'blur' }
           ],
           postCode: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '邮政编码不能为空', trigger: 'blur' }
           ],
           province: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '省份/直辖市不能为空', trigger: 'blur' }
           ],
           city: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '城市不能为空', trigger: 'blur' }
           ],
           region: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '区不能为空', trigger: 'blur' }
           ],
           detailAddress: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '详细地址(街道)不能为空', trigger: 'blur' }
           ],
           areacode: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '省市区代码不能为空', trigger: 'blur' }
           ],
           defaultStatus: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '是否默认不能为空', trigger: 'blur' }
           ]
         }
       }

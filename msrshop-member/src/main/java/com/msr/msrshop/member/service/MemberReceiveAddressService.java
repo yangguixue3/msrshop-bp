@@ -9,9 +9,9 @@ import java.util.Map;
 /**
  * 会员收货地址
  *
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 public interface MemberReceiveAddressService extends IService<MemberReceiveAddressEntity> {
 

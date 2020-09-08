@@ -26,91 +26,91 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="memberId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="会员id">
       </el-table-column>
       <el-table-column
         prop="consumeAmount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="累计消费金额">
       </el-table-column>
       <el-table-column
         prop="couponAmount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="累计优惠金额">
       </el-table-column>
       <el-table-column
         prop="orderCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="订单数量">
       </el-table-column>
       <el-table-column
         prop="couponCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="优惠券数量">
       </el-table-column>
       <el-table-column
         prop="commentCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="评价数">
       </el-table-column>
       <el-table-column
         prop="returnOrderCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="退货数量">
       </el-table-column>
       <el-table-column
         prop="loginCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="登录次数">
       </el-table-column>
       <el-table-column
         prop="attendCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="关注数量">
       </el-table-column>
       <el-table-column
         prop="fansCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="粉丝数量">
       </el-table-column>
       <el-table-column
         prop="collectProductCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="收藏的商品数量">
       </el-table-column>
       <el-table-column
         prop="collectSubjectCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="收藏的专题活动数量">
       </el-table-column>
       <el-table-column
         prop="collectCommentCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="收藏的评论数量">
       </el-table-column>
       <el-table-column
         prop="inviteFriendCount"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="邀请的朋友数量">
       </el-table-column>
       <el-table-column
         fixed="right"

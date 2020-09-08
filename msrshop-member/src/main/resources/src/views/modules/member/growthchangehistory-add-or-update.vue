@@ -4,20 +4,20 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="${column.comments}" prop="memberId">
-      <el-input v-model="dataForm.memberId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="member_id" prop="memberId">
+      <el-input v-model="dataForm.memberId" placeholder="member_id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="createTime">
-      <el-input v-model="dataForm.createTime" placeholder="${column.comments}"></el-input>
+    <el-form-item label="create_time" prop="createTime">
+      <el-input v-model="dataForm.createTime" placeholder="create_time"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="changeCount">
-      <el-input v-model="dataForm.changeCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="改变的值（正负计数）" prop="changeCount">
+      <el-input v-model="dataForm.changeCount" placeholder="改变的值（正负计数）"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="note">
-      <el-input v-model="dataForm.note" placeholder="${column.comments}"></el-input>
+    <el-form-item label="备注" prop="note">
+      <el-input v-model="dataForm.note" placeholder="备注"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="sourceType">
-      <el-input v-model="dataForm.sourceType" placeholder="${column.comments}"></el-input>
+    <el-form-item label="积分来源[0-购物，1-管理员修改]" prop="sourceType">
+      <el-input v-model="dataForm.sourceType" placeholder="积分来源[0-购物，1-管理员修改]"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -42,19 +42,19 @@
         },
         dataRule: {
           memberId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'member_id不能为空', trigger: 'blur' }
           ],
           createTime: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'create_time不能为空', trigger: 'blur' }
           ],
           changeCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '改变的值（正负计数）不能为空', trigger: 'blur' }
           ],
           note: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '备注不能为空', trigger: 'blur' }
           ],
           sourceType: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '积分来源[0-购物，1-管理员修改]不能为空', trigger: 'blur' }
           ]
         }
       }

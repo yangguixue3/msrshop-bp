@@ -26,61 +26,61 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="name"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="等级名称">
       </el-table-column>
       <el-table-column
         prop="growthPoint"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="等级需要的成长值">
       </el-table-column>
       <el-table-column
         prop="defaultStatus"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="是否为默认等级[0->不是；1->是]">
       </el-table-column>
       <el-table-column
         prop="freeFreightPoint"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="免运费标准">
       </el-table-column>
       <el-table-column
         prop="commentGrowthPoint"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="每次评价获取的成长值">
       </el-table-column>
       <el-table-column
         prop="priviledgeFreeFreight"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="是否有免邮特权">
       </el-table-column>
       <el-table-column
         prop="priviledgeMemberPrice"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="是否有会员价格特权">
       </el-table-column>
       <el-table-column
         prop="priviledgeBirthday"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="是否有生日特权">
       </el-table-column>
       <el-table-column
         prop="note"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="备注">
       </el-table-column>
       <el-table-column
         fixed="right"

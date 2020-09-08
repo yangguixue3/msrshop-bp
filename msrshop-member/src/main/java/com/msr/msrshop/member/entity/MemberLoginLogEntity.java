@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 会员登录记录
  * 
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @Data
 @TableName("ums_member_login_log")
@@ -20,28 +20,28 @@ public class MemberLoginLogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * $column.comments
+	 * id
 	 */
 	@TableId
 	private Long id;
 	/**
-	 * $column.comments
+	 * member_id
 	 */
 	private Long memberId;
 	/**
-	 * $column.comments
+	 * 创建时间
 	 */
 	private Date createTime;
 	/**
-	 * $column.comments
+	 * ip
 	 */
 	private String ip;
 	/**
-	 * $column.comments
+	 * city
 	 */
 	private String city;
 	/**
-	 * $column.comments
+	 * 登录类型[1-web，2-app]
 	 */
 	private Integer loginType;
 

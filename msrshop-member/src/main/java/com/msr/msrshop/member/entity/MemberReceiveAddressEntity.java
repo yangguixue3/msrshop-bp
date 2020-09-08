@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 会员收货地址
  * 
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @Data
 @TableName("ums_member_receive_address")
@@ -20,48 +20,48 @@ public class MemberReceiveAddressEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * $column.comments
+	 * id
 	 */
 	@TableId
 	private Long id;
 	/**
-	 * $column.comments
+	 * member_id
 	 */
 	private Long memberId;
 	/**
-	 * $column.comments
+	 * 收货人姓名
 	 */
 	private String name;
 	/**
-	 * $column.comments
+	 * 电话
 	 */
 	private String phone;
 	/**
-	 * $column.comments
+	 * 邮政编码
 	 */
 	private String postCode;
 	/**
-	 * $column.comments
+	 * 省份/直辖市
 	 */
 	private String province;
 	/**
-	 * $column.comments
+	 * 城市
 	 */
 	private String city;
 	/**
-	 * $column.comments
+	 * 区
 	 */
 	private String region;
 	/**
-	 * $column.comments
+	 * 详细地址(街道)
 	 */
 	private String detailAddress;
 	/**
-	 * $column.comments
+	 * 省市区代码
 	 */
 	private String areacode;
 	/**
-	 * $column.comments
+	 * 是否默认
 	 */
 	private Integer defaultStatus;
 

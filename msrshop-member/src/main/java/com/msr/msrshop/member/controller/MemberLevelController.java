@@ -2,7 +2,7 @@ package com.msr.msrshop.member.controller;
 
 import java.util.Arrays;
 import java.util.Map;
-
+//权限认证的
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,9 +21,9 @@ import com.msr.common.utils.R;
 /**
  * 会员等级
  *
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @RestController
 @RequestMapping("member/memberlevel")

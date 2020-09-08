@@ -4,47 +4,47 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="${column.comments}" prop="memberId">
-      <el-input v-model="dataForm.memberId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="会员id" prop="memberId">
+      <el-input v-model="dataForm.memberId" placeholder="会员id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="consumeAmount">
-      <el-input v-model="dataForm.consumeAmount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="累计消费金额" prop="consumeAmount">
+      <el-input v-model="dataForm.consumeAmount" placeholder="累计消费金额"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="couponAmount">
-      <el-input v-model="dataForm.couponAmount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="累计优惠金额" prop="couponAmount">
+      <el-input v-model="dataForm.couponAmount" placeholder="累计优惠金额"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="orderCount">
-      <el-input v-model="dataForm.orderCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="订单数量" prop="orderCount">
+      <el-input v-model="dataForm.orderCount" placeholder="订单数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="couponCount">
-      <el-input v-model="dataForm.couponCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="优惠券数量" prop="couponCount">
+      <el-input v-model="dataForm.couponCount" placeholder="优惠券数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="commentCount">
-      <el-input v-model="dataForm.commentCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="评价数" prop="commentCount">
+      <el-input v-model="dataForm.commentCount" placeholder="评价数"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="returnOrderCount">
-      <el-input v-model="dataForm.returnOrderCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="退货数量" prop="returnOrderCount">
+      <el-input v-model="dataForm.returnOrderCount" placeholder="退货数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="loginCount">
-      <el-input v-model="dataForm.loginCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="登录次数" prop="loginCount">
+      <el-input v-model="dataForm.loginCount" placeholder="登录次数"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="attendCount">
-      <el-input v-model="dataForm.attendCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="关注数量" prop="attendCount">
+      <el-input v-model="dataForm.attendCount" placeholder="关注数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="fansCount">
-      <el-input v-model="dataForm.fansCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="粉丝数量" prop="fansCount">
+      <el-input v-model="dataForm.fansCount" placeholder="粉丝数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="collectProductCount">
-      <el-input v-model="dataForm.collectProductCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="收藏的商品数量" prop="collectProductCount">
+      <el-input v-model="dataForm.collectProductCount" placeholder="收藏的商品数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="collectSubjectCount">
-      <el-input v-model="dataForm.collectSubjectCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="收藏的专题活动数量" prop="collectSubjectCount">
+      <el-input v-model="dataForm.collectSubjectCount" placeholder="收藏的专题活动数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="collectCommentCount">
-      <el-input v-model="dataForm.collectCommentCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="收藏的评论数量" prop="collectCommentCount">
+      <el-input v-model="dataForm.collectCommentCount" placeholder="收藏的评论数量"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="inviteFriendCount">
-      <el-input v-model="dataForm.inviteFriendCount" placeholder="${column.comments}"></el-input>
+    <el-form-item label="邀请的朋友数量" prop="inviteFriendCount">
+      <el-input v-model="dataForm.inviteFriendCount" placeholder="邀请的朋友数量"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -78,46 +78,46 @@
         },
         dataRule: {
           memberId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '会员id不能为空', trigger: 'blur' }
           ],
           consumeAmount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '累计消费金额不能为空', trigger: 'blur' }
           ],
           couponAmount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '累计优惠金额不能为空', trigger: 'blur' }
           ],
           orderCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '订单数量不能为空', trigger: 'blur' }
           ],
           couponCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '优惠券数量不能为空', trigger: 'blur' }
           ],
           commentCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '评价数不能为空', trigger: 'blur' }
           ],
           returnOrderCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '退货数量不能为空', trigger: 'blur' }
           ],
           loginCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '登录次数不能为空', trigger: 'blur' }
           ],
           attendCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '关注数量不能为空', trigger: 'blur' }
           ],
           fansCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '粉丝数量不能为空', trigger: 'blur' }
           ],
           collectProductCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '收藏的商品数量不能为空', trigger: 'blur' }
           ],
           collectSubjectCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '收藏的专题活动数量不能为空', trigger: 'blur' }
           ],
           collectCommentCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '收藏的评论数量不能为空', trigger: 'blur' }
           ],
           inviteFriendCount: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '邀请的朋友数量不能为空', trigger: 'blur' }
           ]
         }
       }

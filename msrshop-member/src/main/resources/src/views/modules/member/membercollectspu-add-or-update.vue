@@ -4,20 +4,20 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="${column.comments}" prop="memberId">
-      <el-input v-model="dataForm.memberId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="会员id" prop="memberId">
+      <el-input v-model="dataForm.memberId" placeholder="会员id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="spuId">
-      <el-input v-model="dataForm.spuId" placeholder="${column.comments}"></el-input>
+    <el-form-item label="spu_id" prop="spuId">
+      <el-input v-model="dataForm.spuId" placeholder="spu_id"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="spuName">
-      <el-input v-model="dataForm.spuName" placeholder="${column.comments}"></el-input>
+    <el-form-item label="spu_name" prop="spuName">
+      <el-input v-model="dataForm.spuName" placeholder="spu_name"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="spuImg">
-      <el-input v-model="dataForm.spuImg" placeholder="${column.comments}"></el-input>
+    <el-form-item label="spu_img" prop="spuImg">
+      <el-input v-model="dataForm.spuImg" placeholder="spu_img"></el-input>
     </el-form-item>
-    <el-form-item label="${column.comments}" prop="createTime">
-      <el-input v-model="dataForm.createTime" placeholder="${column.comments}"></el-input>
+    <el-form-item label="create_time" prop="createTime">
+      <el-input v-model="dataForm.createTime" placeholder="create_time"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -42,19 +42,19 @@
         },
         dataRule: {
           memberId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: '会员id不能为空', trigger: 'blur' }
           ],
           spuId: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'spu_id不能为空', trigger: 'blur' }
           ],
           spuName: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'spu_name不能为空', trigger: 'blur' }
           ],
           spuImg: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'spu_img不能为空', trigger: 'blur' }
           ],
           createTime: [
-            { required: true, message: '${column.comments}不能为空', trigger: 'blur' }
+            { required: true, message: 'create_time不能为空', trigger: 'blur' }
           ]
         }
       }

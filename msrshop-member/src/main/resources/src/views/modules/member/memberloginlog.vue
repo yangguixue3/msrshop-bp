@@ -26,37 +26,37 @@
         prop="id"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="id">
       </el-table-column>
       <el-table-column
         prop="memberId"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="member_id">
       </el-table-column>
       <el-table-column
         prop="createTime"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="创建时间">
       </el-table-column>
       <el-table-column
         prop="ip"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="ip">
       </el-table-column>
       <el-table-column
         prop="city"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="city">
       </el-table-column>
       <el-table-column
         prop="loginType"
         header-align="center"
         align="center"
-        label="${column.comments}">
+        label="登录类型[1-web，2-app]">
       </el-table-column>
       <el-table-column
         fixed="right"

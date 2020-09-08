@@ -11,9 +11,9 @@ import lombok.Data;
 /**
  * 会员等级
  * 
- * @author tom
- * @email tom@gmail.com
- * @date 2020-09-01 15:48:29
+ * @author yang
+ * @email yang@gmail.com
+ * @date 2020-09-08 22:38:22
  */
 @Data
 @TableName("ums_member_level")
@@ -21,44 +21,44 @@ public class MemberLevelEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * $column.comments
+	 * id
 	 */
 	@TableId
 	private Long id;
 	/**
-	 * $column.comments
+	 * 等级名称
 	 */
 	private String name;
 	/**
-	 * $column.comments
+	 * 等级需要的成长值
 	 */
 	private Integer growthPoint;
 	/**
-	 * $column.comments
+	 * 是否为默认等级[0->不是；1->是]
 	 */
 	private Integer defaultStatus;
 	/**
-	 * $column.comments
+	 * 免运费标准
 	 */
 	private BigDecimal freeFreightPoint;
 	/**
-	 * $column.comments
+	 * 每次评价获取的成长值
 	 */
 	private Integer commentGrowthPoint;
 	/**
-	 * $column.comments
+	 * 是否有免邮特权
 	 */
 	private Integer priviledgeFreeFreight;
 	/**
-	 * $column.comments
+	 * 是否有会员价格特权
 	 */
 	private Integer priviledgeMemberPrice;
 	/**
-	 * $column.comments
+	 * 是否有生日特权
 	 */
 	private Integer priviledgeBirthday;
 	/**
-	 * $column.comments
+	 * 备注
 	 */
 	private String note;
 

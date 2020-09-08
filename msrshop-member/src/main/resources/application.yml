@@ -1,18 +1,18 @@
 spring:
   datasource:
     username: root
-    password: a62134787
+    password: 123456
     url: jdbc:mysql://localhost:3306/msrshop_ums?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8858
-  application:
-    name: msrshop-member
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8858
+#  application:
+#    name: msrshop-member
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
