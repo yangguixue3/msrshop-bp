@@ -28,6 +28,7 @@ import com.msr.common.utils.R;
 @RestController
 @RequestMapping("member/growthchangehistory")
 public class GrowthChangeHistoryController {
+
     @Autowired
     private GrowthChangeHistoryService growthChangeHistoryService;
 

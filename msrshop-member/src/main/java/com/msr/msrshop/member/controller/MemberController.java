@@ -5,6 +5,8 @@ import java.util.Map;
 //权限认证的
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,11 +27,22 @@ import com.msr.common.utils.R;
  * @email yang@gmail.com
  * @date 2020-09-08 22:38:22
  */
+
+@RefreshScope
 @RestController
 @RequestMapping("member/member")
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Value("${member.name}")
+    private String name;
+
+    @RequestMapping("/testConfig")
+    public R testConfig(){
+        String str= "获取配置是:"+this.name ;
+        return R.ok().put("member", str);
+    }
 
     /**
      * 列表

@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: admin_route
+          uri: lb://renren-fast #返回工程名称
+          predicates:
+            - Path=/api/**   #断言 检测URL 中是否包含api字样
+          filters:
+            - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: test
+#          uri: https://www.baidu.com
+#          predicates:
+#            # 浏览器 输入 http://localhost:88/?url=123
+#            # 会跳转到百度
+#            # https://www.w3school.com.cn/sql/index.asp
+#            - Query=url,123
+
