@@ -20,7 +20,7 @@ public class BrandServiceImpl extends ServiceImpl<BrandDao, BrandEntity> impleme
     public PageUtils queryPage(Map<String, Object> params) {
         IPage<BrandEntity> page = this.page(
                 new Query<BrandEntity>().getPage(params),
-                new QueryWrapper<BrandEntity>()
+                new QueryWrapper<BrandEntity>().like("name",params.get("name"))
         );
 
         return new PageUtils(page);

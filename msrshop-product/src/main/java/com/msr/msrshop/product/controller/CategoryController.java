@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+import java.util.List;
 import com.msr.msrshop.product.entity.CategoryEntity;
 import com.msr.msrshop.product.service.CategoryService;
 import com.msr.common.utils.PageUtils;
@@ -85,6 +85,16 @@ public class CategoryController {
 		categoryService.removeByIds(Arrays.asList(catIds));
 
         return R.ok();
+    }
+
+    /**
+     * 查询商品所有的分类以及子类，并以树形结构组装
+     */
+    @RequestMapping("/list/tree")
+    //@RequiresPermissions("product:category:delete")
+    public R list(){
+        List<CategoryEntity> entities = categoryService.listWithTree();
+        return R.ok().put("data",entities);
     }
 
 }

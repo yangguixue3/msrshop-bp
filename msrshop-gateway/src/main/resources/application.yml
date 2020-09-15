@@ -2,6 +2,17 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: product_route
+          uri: lb://msrshop-product #返回工程名称
+          predicates:
+            - Path=/api/product/**   #断言 检测URL 中是否包含api字样//访问工程名称
+          filters:
+            # 前端发送请求的路径是 http://localhost/88/api/product/categroy/list/tree
+            # 个人理解: 会通过查找 /api/product/ 匹配到这个路由设定
+            # 过滤后   http://localhost/88/product/categroy/list/tree
+            # 一定主意路由放置的先后顺序 renren-fast 放置在前面的化，请求会被renren-fast的断言api拦截，这里拦截不到请求
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
         - id: admin_route
           uri: lb://renren-fast #返回工程名称
           predicates:
